@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+
+       <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
@@ -38,7 +39,9 @@
     
             <!-- Navigation Menu -->
             <ul class="absolute top-16 left-0 w-full bg-blue-100 shadow-md md:bg-transparent md:static md:flex md:space-x-6 md:w-auto 
-            md:opacity-100 peer-checked:flex flex-col items-center opacity-0 peer-checked:opacity-100 transition-opacity duration-300 md:flex-row">
+                md:opacity-100 hidden peer-checked:flex flex-col items-center opacity-0 peer-checked:opacity-100 
+                transition-opacity duration-300 md:flex-row">
+
                 <li><a href="#about" class="block py-2 px-4 hover:text-blue-600">About</a></li>
                 <li><a href="#projects" class="block py-2 px-4 hover:text-blue-600">Projects</a></li>
                 <li><a href="#contact" class="block py-2 px-4 hover:text-blue-600">Contact</a></li>
@@ -53,7 +56,7 @@
         }
         </style>
         
-    <section class="text-center py-16">
+    <section class="text-center py-16 pt-20">
         <h2 class="text-4xl font-bold opacity-0 animate-[zoomIn_1s_ease-in-out_forwards]">
             Hello, I'm <span class="text-blue-600">Kizzy</span>
         </h2>
@@ -77,7 +80,7 @@
                 I am a frontend developer with a passion for creating beautiful and functional websites.
             </p>
           <img src="images/img3.webp" class="w-80 h-80 rounded-full mx-auto mt-6 opacity-5
-          animate-[rotateIn_1s_ease-in-out_forwards]">
+          animate-[rotateIn_1s_ease-in-out_forwards] max-w-full">
 <style>
 @keyframes rotateIn {
     from { opacity: 0; transform: rotate(-10deg) scale(0.8); }
@@ -98,11 +101,12 @@
     <section id="projects" class="py-12">
         <div class="container mx-auto text-center">
             <h3 class="text-3xl font-semibold text-blue-600">My Projects</h3>
-            <div class="grid md:grid-cols-3 gap-6 p-3">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-3">
+
                 <!-- Project 1 -->
                 <div class="relative bg-white shadow-md p-4 rounded-lg transform transition duration-300 hover:scale-105 group">
                     <!-- Project Image -->
-                    <img src="images/download.jpeg" class="w-full h-48 object-cover rounded-lg">
+                    <img src="images/download.jpeg" class="w-full object-cover rounded-lg max-w-full h-auto">
                 
                     <!-- Title (Always Visible) -->
                     <h3 class="text-xl font-bold text-gray-800 mt-3">Responsive Web Development</h3>
@@ -118,7 +122,7 @@
                 <!-- Project 2 -->
                 <div class="relative bg-white shadow-md p-4 rounded-lg transform transition duration-300 hover:scale-105 group">
                     <!-- Project Image -->
-                    <img src="images/download2.jpeg" class="w-full h-48 object-cover rounded-lg">
+                    <img src="images/download2.jpeg" class="w-full object-cover rounded-lg max-w-full h-auto">
                 
                     <!-- Title (Always Visible) -->
                     <h3 class="text-xl font-bold text-gray-800 mt-3">Creative Graphic Design</h3>
@@ -136,7 +140,7 @@
                 <!-- Project 3 -->
                 <div class="relative bg-white shadow-md p-4 rounded-lg transform transition duration-300 hover:scale-105 group">
                     <!-- Project Image -->
-                    <img src="images/download3.jpeg" class="w-full h-48 object-cover rounded-lg">
+                    <img src="images/download3.jpeg" class="w-full object-cover rounded-lg max-w-full h-auto">
                 
                     <!-- Title (Always Visible) -->
                     <h3 class="text-xl font-bold text-gray-800 mt-3">Data Analysis & Visualization</h3>
